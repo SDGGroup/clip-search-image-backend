@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "clip-search-image-backend"
+version = "0.1.0"
+description = ""
+authors = ["marco-baratta-sdg <marco.baratta@sdggroup.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.3"
+pillow = "^10.3.0"
+torch = {version = "^2.3.0+cpu", source = "pytorch_cpu"}
+transformers = "^4.41.1"
+python-dotenv = "^1.0.1"
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[tool.pyright]
+venvPath = "/home/mbar96/.cache/pypoetry/virtualenvs/"
+venv = "clip-search-image-backend-Gmk6WdVU-py3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
